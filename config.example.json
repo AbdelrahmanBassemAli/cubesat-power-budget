@@ -1,0 +1,17 @@
+{
+  "altitude_km": 500,
+  "beta_deg": 0,
+  "covered_faces": 4,
+  "attitude": "tumbling",
+  "cell_efficiency": 0.28,
+  "packing_factor": 0.70,
+  "degradation": 0.80,
+  "eps_efficiency": 0.85,
+  "battery_efficiency": 0.92,
+  "depth_of_discharge": 0.30,
+  "loads": [
+    {"name": "OBC", "power_w": 0.40, "duty": 1.00},
+    {"name": "Comms TX", "power_w": 2.00, "duty": 0.05},
+    {"name": "Payload", "power_w": 0.50, "duty": 0.50}
+  ]
+}
