@@ -1,12 +1,12 @@
 # CubeSat Power Budget
 
-[![selftest](https://github.com/AbdelrahmanBassemAli/cubesat-power-budget/actions/workflows/ci.yml/badge.svg)](https://github.com/AbdelrahmanBassemAli/cubesat-power-budget/actions)
+[![selftest](https://github.com/AbdelrahmanBassemAli/cubesat-power-budget/actions/workflows/main.yml/badge.svg)](https://github.com/AbdelrahmanBassemAli/cubesat-power-budget/actions)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AbdelrahmanBassemAli/cubesat-power-budget/blob/main/CubeSat_Power_Budget.ipynb)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A first-order, orbit-average **power budget calculator for CubeSats** in Python. It answers the first question an electrical power subsystem (EPS) designer asks: *does the energy collected in sunlight cover the load and recharge the battery for the eclipse?*
 
-![Animation: tumbling 1U CubeSat](docs/power_animation.gif)
+![Animation: tumbling 1U CubeSat](power_animation.gif)
 
 *Default tumbling 1U design at 500 km, beta 0 deg: generation drops to zero in eclipse and the battery loses charge orbit after orbit, so the design does not close.*
 
@@ -41,11 +41,11 @@ Or run it in the browser with the Colab badge above. Outputs go to `results/`: `
 | Power margin | -18.1 % (does not close) | +145.6 % |
 | Battery for 30 % DoD | 2.79 Wh | 2.79 Wh |
 
-![Sun-pointing design](docs/power_animation_sun_pointing.gif)
+![Sun-pointing design](power_animation_sun_pointing.gif)
 
 The beta-angle sweep shows the worst case is beta 0 and that eclipses disappear above about 68 deg at this altitude:
 
-![Beta sweep](docs/power_budget_beta_sweep.png)
+![Beta sweep](power_budget_beta_sweep.png)
 
 ## Method
 - Period: `T = 2*pi*sqrt(a^3 / mu)`, with `a = Re + h`
